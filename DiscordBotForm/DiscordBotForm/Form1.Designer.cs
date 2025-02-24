@@ -1,4 +1,4 @@
-﻿namespace DiscordBotForm
+п»їnamespace DiscordBotForm
 {
     partial class Form1
     {
@@ -37,6 +37,7 @@
             button3 = new Button();
             openFileDialog1 = new OpenFileDialog();
             button4 = new Button();
+            richTextBox1 = new RichTextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -81,7 +82,7 @@
             label1.Name = "label1";
             label1.Size = new Size(108, 20);
             label1.TabIndex = 2;
-            label1.Text = "Бот выключен";
+            label1.Text = "Р‘РѕС‚ РІС‹РєР»СЋС‡РµРЅ";
             // 
             // label2
             // 
@@ -139,12 +140,23 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
+            // richTextBox1
+            // 
+            richTextBox1.BackColor = Color.FromArgb(44, 43, 57);
+            richTextBox1.ForeColor = SystemColors.MenuBar;
+            richTextBox1.Location = new Point(12, 151);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(393, 231);
+            richTextBox1.TabIndex = 7;
+            richTextBox1.Text = "";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(44, 43, 57);
-            ClientSize = new Size(417, 143);
+            ClientSize = new Size(417, 394);
+            Controls.Add(richTextBox1);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -170,5 +182,6 @@
         private Button button3;
         private OpenFileDialog openFileDialog1;
         private Button button4;
+        private RichTextBox richTextBox1;
     }
 }
